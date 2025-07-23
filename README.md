@@ -15,6 +15,7 @@ This project provides a simple RESTful API for managing video information, built
  - pip (Python package installer)
 
 **Installation Steps**
+
 **1. Clone the Repository (or save the code):**
 
 If this code is part of a larger repository, clone it. Otherwise, save the provided code as a Python file (e.g., app.py).

@@ -121,10 +121,11 @@ curl -u your_username:your_password -X POST -H "Content-Type: application/json" 
         "views": 2500,
         "likes": 120
     }
-   - Error Response:
-     - 409 Conflict: If video_id already exists.
-     - 400 Bad Request: If required arguments (name, views, likes) are missing or have invalid types.
-     - 401 Unauthorized: If authentication fails.
+
+- Error Response:
+   - 409 Conflict: If video_id already exists.
+   - 400 Bad Request: If required arguments (name, views, likes) are missing or have invalid types.
+   - 401 Unauthorized: If authentication fails.
 
 **3. Update a Video**
  - URL: /video/<int:video_id>

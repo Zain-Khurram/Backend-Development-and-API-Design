@@ -82,14 +82,15 @@ All endpoints require HTTP Basic Authentication. Use the USER and PASSWORD envir
    curl -u your_username:your_password http://127.0.0.1:5000/video/1
    ```
  - Success Response:
-  ```JSON
-  {
-      "id": 1,
-      "name": "My Awesome Video",
-      "views": 1000,
-      "likes": 50
-  }
-  ```
+```JSON
+{
+"id": 1,
+"name": "My Awesome Video",
+"views": 1000,
+"likes": 50
+}
+```
+
  - Error Response:
    - 404 Not Found: If video_id does not exist.
    - 401 Unauthorized: If authentication fails.
@@ -99,18 +100,17 @@ All endpoints require HTTP Basic Authentication. Use the USER and PASSWORD envir
  - Method: POST
  - Description: Creates a new video entry.
  - Request Body (JSON):
-   ```JSON
-  {
-      "name": "New Video Title",
-      "views": 2500,
-      "likes": 120
-  }
-  ```
+```JSON
+{
+"name": "New Video Title",
+"views": 2500,
+"likes": 120
+}
+```
  - Example Request:
-
-  ```Bash
-  curl -u your_username:your_password -X POST -H "Content-Type: application/json" -d '{"name": "New Video Title", "views": 2500, "likes": 120}' http://127.0.0.1:5000/video/2
-  ```
+```Bash
+curl -u your_username:your_password -X POST -H "Content-Type: application/json" -d '{"name": "New Video Title", "views": 2500, "likes": 120}' http://127.0.0.1:5000/video/2
+```
 
  - Success Response:
    - 201 Created
